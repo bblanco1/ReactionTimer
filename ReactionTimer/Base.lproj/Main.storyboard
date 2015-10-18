@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bue-gf-cGn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Int-rW-30S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G4T-q1-khY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="j6U-0t-Pja">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R19-TY-FOn">
+                                <rect key="frame" x="203" y="204" width="195" height="191"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="LUe-Zq-yT2"/>
+                                    <constraint firstAttribute="width" constant="195" id="gWx-PI-sp8"/>
+                                </constraints>
+                                <state key="normal" image="400x3001"/>
+                                <state key="highlighted" image="400x300"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onb-n6-GpG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmX-at-rZw">
+                                <rect key="frame" x="225" y="541" width="150" height="39"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CWM-bJ-ZGB"/>
+                                    <constraint firstAttribute="height" constant="39" id="Ene-ZP-YI8"/>
+                                    <constraint firstAttribute="height" constant="39" id="V2g-Lz-0rv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V2g-Lz-0rv"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reaction Timer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXK-mB-PCp">
+                                <rect key="frame" x="219" y="20" width="163" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpN-tZ-iIR">
+                                <rect key="frame" x="281" y="152" width="39" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SsD-IA-jqB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ll-Nd-9Ii">
+                                <rect key="frame" x="284" y="403" width="32" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnL-Qd-D0L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xmX-at-rZw" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="3w4-2U-bzk"/>
+                            <constraint firstItem="Int-rW-30S" firstAttribute="top" secondItem="xmX-at-rZw" secondAttribute="bottom" constant="20" id="CcU-Lm-0r6"/>
+                            <constraint firstItem="R19-TY-FOn" firstAttribute="centerY" secondItem="G4T-q1-khY" secondAttribute="centerY" id="Lnf-eU-JCY"/>
+                            <constraint firstItem="R19-TY-FOn" firstAttribute="top" secondItem="UpN-tZ-iIR" secondAttribute="bottom" constant="22" id="YCf-5e-d3i"/>
+                            <constraint firstItem="R19-TY-FOn" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="YzT-Zz-a5O"/>
+                            <constraint firstItem="R19-TY-FOn" firstAttribute="top" secondItem="UpN-tZ-iIR" secondAttribute="bottom" constant="8" id="czW-pR-OUm"/>
+                            <constraint firstItem="2ll-Nd-9Ii" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="flD-ZH-C81"/>
+                            <constraint firstItem="UpN-tZ-iIR" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="g5C-IG-lwx"/>
+                            <constraint firstItem="R19-TY-FOn" firstAttribute="centerY" secondItem="G4T-q1-khY" secondAttribute="centerY" id="gG0-cF-jXY"/>
+                            <constraint firstItem="dXK-mB-PCp" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="gWM-dL-3ZA"/>
+                            <constraint firstItem="R19-TY-FOn" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="hQa-b7-rvi"/>
+                            <constraint firstItem="2ll-Nd-9Ii" firstAttribute="top" secondItem="R19-TY-FOn" secondAttribute="bottom" constant="8" id="t7F-YQ-WlU"/>
+                            <constraint firstItem="dXK-mB-PCp" firstAttribute="top" secondItem="Bue-gf-cGn" secondAttribute="bottom" id="tVx-dc-4dq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="czW-pR-OUm"/>
+                                <exclude reference="gG0-cF-jXY"/>
+                                <exclude reference="hQa-b7-rvi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonReset" destination="UpN-tZ-iIR" id="TM9-a6-Uoe"/>
+                        <outlet property="buttonStart" destination="R19-TY-FOn" id="n5p-F7-kwX"/>
+                        <outlet property="buttonStop" destination="2ll-Nd-9Ii" id="fAh-Vs-k6O"/>
+                        <outlet property="timerLabel" destination="xmX-at-rZw" id="HXX-Bs-pJf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="400x300" width="208" height="191"/>
+        <image name="400x3001" width="204" height="195"/>
+        <image name="background" width="600" height="600"/>
+    </resources>
+</document>
