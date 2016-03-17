@@ -9,7 +9,6 @@
         <mutableArray key="HelveticaNeueLights.ttc">
             <string>HelveticaNeue-Light</string>
             <string>HelveticaNeue-Light</string>
-            <string>HelveticaNeue-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -68,19 +67,6 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnL-Qd-D0L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpN-tZ-iIR">
-                                <rect key="frame" x="269" y="146" width="63" height="42"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" title="Reset">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SsD-IA-jqB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -90,12 +76,9 @@
                             <constraint firstItem="R19-TY-FOn" firstAttribute="centerY" secondItem="G4T-q1-khY" secondAttribute="centerY" id="Lnf-eU-JCY"/>
                             <constraint firstItem="Int-rW-30S" firstAttribute="top" secondItem="j6U-0t-Pja" secondAttribute="bottom" id="R6N-jx-uuW"/>
                             <constraint firstAttribute="trailing" secondItem="j6U-0t-Pja" secondAttribute="trailing" id="RuH-gz-Tj9"/>
-                            <constraint firstItem="R19-TY-FOn" firstAttribute="top" secondItem="UpN-tZ-iIR" secondAttribute="bottom" constant="16" id="YCf-5e-d3i"/>
                             <constraint firstItem="R19-TY-FOn" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="YzT-Zz-a5O"/>
-                            <constraint firstItem="R19-TY-FOn" firstAttribute="top" secondItem="UpN-tZ-iIR" secondAttribute="bottom" constant="8" id="czW-pR-OUm"/>
                             <constraint firstItem="j6U-0t-Pja" firstAttribute="leading" secondItem="G4T-q1-khY" secondAttribute="leading" id="djB-aU-FDH"/>
                             <constraint firstItem="2ll-Nd-9Ii" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="flD-ZH-C81"/>
-                            <constraint firstItem="UpN-tZ-iIR" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="g5C-IG-lwx"/>
                             <constraint firstItem="R19-TY-FOn" firstAttribute="centerY" secondItem="G4T-q1-khY" secondAttribute="centerY" id="gG0-cF-jXY"/>
                             <constraint firstItem="R19-TY-FOn" firstAttribute="centerX" secondItem="G4T-q1-khY" secondAttribute="centerX" id="hQa-b7-rvi"/>
                             <constraint firstItem="2ll-Nd-9Ii" firstAttribute="top" secondItem="R19-TY-FOn" secondAttribute="bottom" constant="2" id="t7F-YQ-WlU"/>
@@ -103,14 +86,12 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="czW-pR-OUm"/>
                                 <exclude reference="gG0-cF-jXY"/>
                                 <exclude reference="hQa-b7-rvi"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="buttonReset" destination="UpN-tZ-iIR" id="TM9-a6-Uoe"/>
                         <outlet property="buttonStart" destination="R19-TY-FOn" id="n5p-F7-kwX"/>
                         <outlet property="buttonStop" destination="2ll-Nd-9Ii" id="fAh-Vs-k6O"/>
                         <outlet property="timerLabel" destination="xmX-at-rZw" id="HXX-Bs-pJf"/>

@@ -37,26 +37,19 @@
 -(IBAction)stop:(id)sender {
     
     [countTimer invalidate];
+    
     if (count == 0) {
         
         timerLabel.text = [NSString stringWithFormat:@"Okay.. you got it"];
+        [countTimer invalidate];
         NSLog(@"Pressed");
         
     } else if (count > 0) {
         timerLabel.text = [NSString stringWithFormat:@"What's the rush?"];
+        [countTimer invalidate];
     }
     
 }
-
--(IBAction)reset:(id)sender {
-    
-    [countTimer invalidate];
-    count = arc4random_uniform(51);
-    timerLabel.text = [NSString stringWithFormat:@"%i", count];
-    NSLog(@"Pressed");
-    
-}
-
 
 -(void)startCounting {
     

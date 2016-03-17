@@ -10,15 +10,14 @@
 
 int count;
 
-@interface ViewController : UIViewController {
-    
+@interface ViewController : UIViewController
+
+{
     IBOutlet UIButton *buttonStart;
     IBOutlet UIButton *buttonStop;
     IBOutlet UIButton *buttonReset;
     IBOutlet UIButton *buttonDoubleClicked;
     IBOutlet UILabel *timerLabel;
-    
-    
     
     NSTimer *countTimer;
 }
